@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@color/colorTextoBlanco"
+    tools:context="mx.grupogarcia.favorite_sites.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cuau"
+
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <ImageButton
+            android:id="@+id/imgCarmen"
+            android:layout_width="@dimen/tamaño"
+            android:layout_height="@dimen/tamaño"
+            android:src="@drawable/carmen"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:onClick="goCarmen"/>
+
+        <ImageButton
+            android:id="@+id/imgChiquihuite"
+            android:layout_width="@dimen/tamaño"
+            android:layout_height="@dimen/tamaño"
+            android:src="@drawable/chiquihuite"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:onClick="goChiquihuite"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/imgPreciosa"
+            android:layout_width="@dimen/tamaño"
+            android:layout_height="@dimen/aiglesia"
+            android:src="@drawable/preciosa"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="goPreciosa"
+
+            />
+
+        <ImageButton
+            android:id="@+id/imgUacm"
+            android:layout_width="@dimen/tamaño"
+            android:layout_height="match_parent"
+            android:src="@drawable/uacm"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="goUacm"
+             />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
